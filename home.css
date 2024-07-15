@@ -107,9 +107,9 @@ background-position: center;
 display: flex;
 align-items: center;
 justify-content: flex-start;
-/* display: grid; */
-/* grid-template-columns: 1fr 1fr; */
-/* grid-gap:40px; */
+display: grid;
+grid-template-columns: 3fr 2fr;
+grid-gap:160px;
 }
 .hero-text h3{
     color: var(--second-color);
@@ -170,7 +170,7 @@ header.sticky{
     
 }
 .about-img img{
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 110px;
     margin-right: 300px;
@@ -281,7 +281,7 @@ span{
     background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
 }
 .html{
-    width: 90%;
+    width: 95%;
     animation: html 3s;
 }
 .css{
@@ -293,11 +293,11 @@ span{
     animation: JavaScript 3s;
 }
 .React{
-    width: 50%;
+    width: 80%;
     animation: React 3s;
 }
 .Photoshop{
-    width: 80%;
+    width: 70%;
     animation: Photoshop 3s;
 }
 @keyframes html{
@@ -349,15 +349,22 @@ span{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    background-color: #605e62;
     cursor: pointer;
+
 }
 .row img{
     width: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     display: block;
-    transition:transform 0.5s;
+    background-color: #e9204f;
+    transition: transform 0.5s ease;
 }
-.layer{
+.row img :hover .row img{
+    transform: scale(1.1);
+}
+
+/* .layer{
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,1),);
@@ -373,11 +380,15 @@ span{
     text-align: center;
     padding: 0 40px;
     transition: height 0.5s;
-}
+} */
 .layer h5{
     font-size: 20px;
     font-weight:600 ;
     margin-bottom:15px ;
+    color: rgb(246, 230, 233);
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
 
 }
 .layer p{
@@ -399,11 +410,11 @@ span{
     grid-template-columns: repeat(2,2fr);
     align-items: center;
     grid-gap:6rem; 
-    /* color: #fff; */
+    color: #fff;
 }
 .contact-img img{
     max-width: 100%;
-    width: 720px;
+    width: 600px;
     height: auto;
     border-radius: 30px;
 }
